@@ -50,4 +50,20 @@ class Employee{
 			salary += increase;		
 		 }
 	}
+	
+	public void raiseHourlyrate(double increase){
+		if(increase > 0 && ishourly){
+			hourlyRate += increase;		
+		 }
+	}
+	
+	public void raiseCommssion(double increase){
+		if(increase > 0 && hasCommission){
+			baseRate += increase;		
+		 }
+	}
+	
+	public void changeaddress(String address){
+		this.address = address;
+	}
 }
